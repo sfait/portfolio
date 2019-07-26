@@ -122,7 +122,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .technology {
@@ -136,52 +136,44 @@ body {
     color: var(--eighth-color);
 }
 
-/* main page */
-/* .main-page-wrapper {
-    height: 100vh;
-    text-transform: uppercase;
+/* prpjects */
+.projects {
+    margin-bottom: 4.5rem;
+}
+.projects-box {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    animation-name: show;
-    animation-duration: 4s;
-    animation-timing-function: ease-in;
+    justify-content: space-between;
 }
 
-.main-header {
-    color: var(--fifth-color);
-    font-size: 3.5rem;
-    letter-spacing: 2px;
-}
-
-.second-header {
-    width: 80%;
-    margin: 0 0 1.5rem 0;
+.projects-box a {
     color: var(--base-color);
-    font-size: 0.8rem;
-    line-height: 2;
+    text-decoration: none;
+    text-align: center;
 }
 
-.main-page-list {
-    list-style: none;
+.project {
+    width: 200px;
+    height: 200px;
+    line-height: 1.5;
+    border: 4px solid var(--fifth-color);
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    transition: color 0.6s, border-color 0.6s;
 }
 
-.main-page-wrapper a {
-    color: var(--sixth-color);
-    text-decoration: none;
-    margin: 2rem 1rem;
-    transition: color 0.6s;
-}
-
-.main-page-wrapper a:hover {
+.project:hover {
     color: var(--eighth-color);
-} */
+    border-color: var(--eighth-color);
+}
+
+/* footer */
+.footer-wrapper {
+    padding: 1.5rem 0;
+    color: var(--base-color);
+    text-align: right;
+}
 
 /* animations */
 @-webkit-keyframes show {
