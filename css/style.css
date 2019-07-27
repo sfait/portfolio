@@ -257,6 +257,7 @@ body {
 .footer-wrapper {
     padding: 1.5rem 0;
     color: var(--base-color);
+    font-size: 0.8rem;
     text-align: center;
     -webkit-animation-name: slideInLeft;
             animation-name: slideInLeft;
@@ -317,5 +318,6 @@ body {
 
     .footer-wrapper {
         text-align: right;
+        font-size: 1rem;
     }
 }
