@@ -43,7 +43,7 @@ body {
 
 /* header */
 .header {
-    margin: 2.5rem 0 4.5rem;
+    margin: 2.5rem 0 3.5rem;
 }
 
 .main-header {
@@ -53,6 +53,8 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     line-height: 1.5;
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
 }
 
 .second-header {
@@ -60,11 +62,16 @@ body {
     color: var(--base-color);
     font-size: 1rem;
     font-weight: 500;
+    /* animation-name: zoomInDown; */
+    animation-name: rollIn;
+    animation-duration: 8s;
 }
 
 /* about-me */
 .about-me {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
 }
 
 .third-header {
@@ -115,7 +122,9 @@ body {
 
 /* technologies */
 .technologies {
-    margin-bottom : 4.5rem;
+    margin-bottom : 3.5rem;
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
 }
 
 .technologies-box {
@@ -138,7 +147,9 @@ body {
 
 /* prpjects */
 .projects {
-    margin-bottom: 4.5rem;
+    margin-bottom: 3.5rem;
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
 }
 .projects-box {
     display: flex;
@@ -173,6 +184,8 @@ body {
     padding: 1.5rem 0;
     color: var(--base-color);
     text-align: right;
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
 }
 
 /* animations */
