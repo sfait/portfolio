@@ -46,6 +46,10 @@ body {
     margin: 2.5rem 0 3.5rem;
 }
 
+.header-wrapper {
+    text-align: center;
+}
+
 .main-header {
     margin: 0;
     color: var(--fifth-color);
@@ -60,7 +64,7 @@ body {
 .second-header {
     margin: 0;
     color: var(--base-color);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     animation-name: slideInLeft;
     animation-duration: 8s;
@@ -73,10 +77,16 @@ body {
     animation-duration: 3s;
 }
 
+.about-me-wrapper {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
 .third-header {
     margin: 0 0 1.5rem;
     color: var(--sixth-color);
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .about-me-paragraph {
@@ -128,13 +138,14 @@ body {
 
 .technologies-box {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .technology {
-    margin: 1.5rem;
+    margin: 0.5rem;
     color: var(--base-color);
     font-size: 6rem;
     transition: color 0.6s;
@@ -150,10 +161,13 @@ body {
     animation-name: slideInLeft;
     animation-duration: 3s;
 }
+
 .projects-box {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .projects-box a {
@@ -163,11 +177,13 @@ body {
 }
 
 .project {
+    margin: 0.5rem;
     width: 200px;
     height: 200px;
     line-height: 1.5;
-    border: 4px solid var(--fifth-color);
+    border: 4px solid var(--base-color);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: color 0.6s, border-color 0.6s;
@@ -178,29 +194,70 @@ body {
     border-color: var(--eighth-color);
 }
 
+.fourth-header {
+    margin: 0;
+    color: var(--fifth-color);
+}
+
+.fourth-header-last {
+    color: var(--sixth-color);
+}
+
+.project-paragraph {
+    font-size: 0.8rem;
+}
+
 /* footer */
 .footer-wrapper {
     padding: 1.5rem 0;
     color: var(--base-color);
-    text-align: right;
+    text-align: center;
     animation-name: slideInLeft;
     animation-duration: 3s;
 }
 
-/* animations */
-@-webkit-keyframes show {
-    0% {
-        opacity: 0;
+/* media queries*/
+@media only screen and (min-width: 700px) {
+    .header-wrapper {
+        text-align: left;
     }
-    100% {
-        opacity: 1;
+
+    .about-me-wrapper {
+        text-align: left;
     }
-}
-@keyframes show {
-    0% {
-        opacity: 0;
+
+    .second-header {
+        font-size: 1rem;
     }
-    100% {
-        opacity: 1;
+
+    .about-me-wrapper {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .third-header {
+        text-align: left;
+    }
+
+    .technologies-box {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .technology {
+        margin: 1.5rem;
+    }
+
+    .projects-box {
+        flex-direction: row;
+        justify-content: left;
+    }
+
+    .project {
+        margin: 1.5rem;
+    }
+
+    .footer-wrapper {
+        text-align: right;
     }
 }
