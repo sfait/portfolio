@@ -14,7 +14,7 @@ function getDate() {
 }
 
 function showHeader() {
-    const secondHeader = document.querySelector(".second-header-span");
+    const secondHeader = document.querySelector(".second-header");
     secondHeader.textContent = getDate();
 }
 
