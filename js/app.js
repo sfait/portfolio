@@ -37,12 +37,6 @@ function changeColor() {
     }
 }
 
-// function checkSlide(e) {
-//     console.log(e);
-// }
-//
-// window.addEventListener("scroll", checkSlide);
-
 const init = () => {
     showHeader();
     changeColor();
