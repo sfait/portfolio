@@ -217,6 +217,7 @@ body {
 
 .project {
     margin: 0.5rem;
+    padding: 0.5rem;
     width: 200px;
     height: 200px;
     line-height: 1.5;
