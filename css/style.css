@@ -60,8 +60,8 @@ body {
     line-height: 1.5;
     -webkit-animation-name: slideInLeft;
             animation-name: slideInLeft;
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
 }
 
 .second-header {
