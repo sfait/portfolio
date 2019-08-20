@@ -18,6 +18,7 @@
 
 body {
     background: var(--second-color);
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -275,7 +276,7 @@ body {
 }
 
 /* media queries*/
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 1000px) {
     .header-wrapper {
         text-align: left;
     }
@@ -328,5 +329,27 @@ body {
     .footer-wrapper {
         text-align: right;
         font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    .technologies-box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .projects-box {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 }
