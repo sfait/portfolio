@@ -23,7 +23,7 @@ function getRandomColor() {
     return randomColor;
 }
 
-function changeColor() {
+function changeColorIcon() {
     const technology = document.querySelectorAll(".technology");
 
     for (let i=0; i<technology.length; i++) {
@@ -37,9 +37,24 @@ function changeColor() {
     }
 }
 
-const init = () => {
+function changeColorBorder() {
+    const projects = document.querySelectorAll(".project");
+
+    for (let i=0; i<projects.length; i++) {
+        projects[i].addEventListener("mouseover", function() {
+            this.style.borderColor = "#" + getRandomColor();
+        })
+
+        projects[i].addEventListener("mouseout", function() {
+            this.style.borderColor = "#fff";
+        })
+    }
+}
+
+const init = function() {
     showHeader();
-    changeColor();
+    changeColorIcon();
+    changeColorBorder();
 };
 
 document.addEventListener("DOMContentLoaded", init);
