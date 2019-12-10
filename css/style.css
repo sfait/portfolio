@@ -235,12 +235,6 @@ body {
     animation-duration: 3s;
 }
 
-.projects-wrapper-paragraph {
-    color: #ffffff;
-    line-height: 2;
-    text-align: center;
-}
-
 .projects-box {
     display: -webkit-box;
     display: -ms-flexbox;
